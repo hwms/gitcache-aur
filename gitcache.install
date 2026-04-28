@@ -1,0 +1,24 @@
+post_install() {
+  cat <<'EOM'
+
+==> gitcache is installed.
+==>
+==> To use gitcache as a git wrapper, create this symlink manually:
+==>
+==>   sudo ln -s /usr/bin/gitcache /usr/local/bin/git
+==>
+==> Make sure /usr/local/bin comes before /usr/bin in your PATH:
+==>
+==>   command -v git
+==>   gitcache --version
+==>
+==> To undo this:
+==>
+==>   sudo rm /usr/local/bin/git
+
+EOM
+}
+
+post_upgrade() {
+  post_install
+}

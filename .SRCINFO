@@ -1,0 +1,23 @@
+pkgbase = gitcache
+	pkgdesc = Local cache for git repositories to speed up working with large repositories and multiple clones
+	pkgver = 1.0.33
+	pkgrel = 3
+	url = https://github.com/seeraven/gitcache
+	install = gitcache.install
+	arch = any
+	license = BSD-3-Clause
+	makedepends = git
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-setuptools
+	makedepends = python-wheel
+	depends = git
+	depends = python
+	depends = python-coloredlogs
+	depends = python-portalocker
+	depends = python-pytimeparse
+	optdepends = git-lfs: Git LFS support
+	source = git+https://github.com/seeraven/gitcache.git#tag=v1.0.33
+	sha256sums = ebf70c6bd392ef6aa17aa1635f266d65fda87385f7eeddc7e79231256e5cc686
+
+pkgname = gitcache
